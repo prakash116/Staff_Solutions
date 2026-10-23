@@ -1,0 +1,126 @@
+{
+  "currency": "INR",
+  "pricingDisclaimer": "All figures are illustrative sample values and subject to confirmation. Salary is paid by the hiring business to the employee; placement fees are charged separately and are not included in salary ranges.",
+  "salaryLabel": "Indicative monthly salary",
+  "placementFeeLabel": "Placement fee",
+  "placementFeeUnavailableLabel": "On request",
+  "estimateLabel": "Estimate",
+  "confirmedLabel": "Confirmed",
+  "items": [
+    {
+      "id": "chef-monthly",
+      "categoryId": "chef",
+      "salaryMin": 18000,
+      "salaryMax": 35000,
+      "placementFee": null,
+      "billingPeriod": "monthly",
+      "isEstimate": true,
+      "active": true,
+      "notes": "Illustrative salary range. Confirm actual requirements and pricing."
+    },
+    {
+      "id": "kitchen-helper-monthly",
+      "categoryId": "kitchen-helper",
+      "salaryMin": 10000,
+      "salaryMax": 16000,
+      "placementFee": null,
+      "billingPeriod": "monthly",
+      "isEstimate": true,
+      "active": true,
+      "notes": "Illustrative salary range."
+    },
+    {
+      "id": "waiter-monthly",
+      "categoryId": "waiter",
+      "salaryMin": 11000,
+      "salaryMax": 18000,
+      "placementFee": null,
+      "billingPeriod": "monthly",
+      "isEstimate": true,
+      "active": true,
+      "notes": "Illustrative salary range. Varies with establishment type."
+    },
+    {
+      "id": "general-helper-monthly",
+      "categoryId": "general-helper",
+      "salaryMin": 9000,
+      "salaryMax": 14000,
+      "placementFee": null,
+      "billingPeriod": "monthly",
+      "isEstimate": true,
+      "active": true
+    },
+    {
+      "id": "utility-staff-monthly",
+      "categoryId": "utility-staff",
+      "salaryMin": 10000,
+      "salaryMax": 15000,
+      "placementFee": null,
+      "billingPeriod": "monthly",
+      "isEstimate": true,
+      "active": true
+    },
+    {
+      "id": "plumber-monthly",
+      "categoryId": "plumber",
+      "salaryMin": 15000,
+      "salaryMax": 25000,
+      "placementFee": null,
+      "billingPeriod": "monthly",
+      "isEstimate": true,
+      "active": true,
+      "notes": "Depends on experience and certification."
+    },
+    {
+      "id": "carpenter-monthly",
+      "categoryId": "carpenter",
+      "salaryMin": 15000,
+      "salaryMax": 26000,
+      "placementFee": null,
+      "billingPeriod": "monthly",
+      "isEstimate": true,
+      "active": true
+    },
+    {
+      "id": "painter-monthly",
+      "categoryId": "painter",
+      "salaryMin": 13000,
+      "salaryMax": 22000,
+      "placementFee": null,
+      "billingPeriod": "monthly",
+      "isEstimate": true,
+      "active": true
+    },
+    {
+      "id": "housekeeping-monthly",
+      "categoryId": "housekeeping-staff",
+      "salaryMin": 10000,
+      "salaryMax": 16000,
+      "placementFee": null,
+      "billingPeriod": "monthly",
+      "isEstimate": true,
+      "active": true
+    },
+    {
+      "id": "security-monthly",
+      "categoryId": "security-staff",
+      "salaryMin": 12000,
+      "salaryMax": 20000,
+      "placementFee": null,
+      "billingPeriod": "monthly",
+      "isEstimate": true,
+      "active": true,
+      "notes": "Night shifts may attract different rates."
+    },
+    {
+      "id": "office-assistant-monthly",
+      "categoryId": "office-assistant",
+      "salaryMin": 12000,
+      "salaryMax": 22000,
+      "placementFee": null,
+      "billingPeriod": "monthly",
+      "isEstimate": true,
+      "active": true
+    }
+  ]
+}

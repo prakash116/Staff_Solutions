@@ -1,0 +1,11 @@
+{
+  "main": [
+    { "id": "home", "label": "Home", "href": "/" },
+    { "id": "services", "label": "Services", "href": "/services" },
+    { "id": "staff-categories", "label": "Staff Categories", "href": "/staff-categories" },
+    { "id": "how-it-works", "label": "How It Works", "href": "/#how-it-works" },
+    { "id": "about", "label": "About", "href": "/about" },
+    { "id": "contact", "label": "Contact", "href": "/contact" }
+  ],
+  "cta": { "id": "hire", "label": "Hire Staff", "href": "/contact" }
+}

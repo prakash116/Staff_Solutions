@@ -1,0 +1,44 @@
+{
+  "default": {
+    "titleTemplate": "%s | StaffHiring",
+    "title": "StaffHiring — Permanent Staff Hiring & Recruitment for Businesses",
+    "description": "Hire permanent chefs, waiters, housekeeping, security, office and skilled trade staff for your business. Structured requirements, indicative budgets and a clear hiring process.",
+    "keywords": ["permanent staffing", "staff hiring", "recruitment services", "restaurant staff hiring", "hotel staff", "office staff", "skilled workforce"],
+    "ogImage": null,
+    "twitterHandle": null
+  },
+  "pages": {
+    "home": {
+      "title": "Permanent Staff Hiring & Recruitment for Businesses",
+      "description": "Build your team with a streamlined permanent staffing solution. Explore staff categories, indicative hiring budgets and a clear four-step hiring process."
+    },
+    "about": {
+      "title": "About",
+      "description": "Learn how StaffHiring approaches permanent staffing for restaurants, hotels, offices, retail stores and commercial businesses."
+    },
+    "services": {
+      "title": "Staffing Services",
+      "description": "Restaurant, hospitality, office, retail, maintenance and custom permanent staffing services for businesses."
+    },
+    "staffCategories": {
+      "title": "Staff Categories",
+      "description": "Browse permanent staff categories including chefs, kitchen helpers, waiters, housekeeping, security, office assistants and skilled trades."
+    },
+    "contact": {
+      "title": "Request Staff",
+      "description": "Share your staffing requirement — role, headcount, budget and timeline — and get in touch with StaffHiring."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How StaffHiring handles the information you share through this website."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "description": "Terms governing the use of the StaffHiring website and services."
+    },
+    "notFound": {
+      "title": "Page not found",
+      "description": "The page you are looking for does not exist."
+    }
+  }
+}

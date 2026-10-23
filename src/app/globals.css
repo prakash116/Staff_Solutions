@@ -1,0 +1,325 @@
+@import "tailwindcss";
+
+/* Dark mode is driven by the data-theme attribute set before paint by ThemeScript. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* ------------------------------------------------------------------------- */
+/* Brand palette (fixed) and semantic tokens (theme-dependent)               */
+/* ------------------------------------------------------------------------- */
+
+:root {
+  --brand-jade-black: #0a0a0a;
+  --brand-cerulean: #007ba7;
+  --brand-neon-rose: #ff2d95;
+
+  /* Light theme */
+  --background: #f4f7f9;
+  --foreground: #0a0a0a;
+  --primary: #007ba7;
+  --primary-hover: #006b91;
+  --primary-foreground: #ffffff;
+  --primary-text: #006b91;
+  --secondary: #0a0a0a;
+  --secondary-foreground: #f4f7f9;
+  --accent: #ff2d95;
+  --accent-text: #c2186d;
+  --surface: rgba(255, 255, 255, 0.66);
+  --surface-strong: #ffffff;
+  --surface-hover: rgba(255, 255, 255, 0.9);
+  --border: rgba(10, 10, 10, 0.1);
+  --border-strong: rgba(10, 10, 10, 0.18);
+  --muted: #5b6b74;
+  --muted-surface: rgba(10, 10, 10, 0.04);
+  --glow-primary: rgba(0, 123, 167, 0.14);
+  --glow-accent: rgba(255, 45, 149, 0.1);
+  --shadow-color: 10 10 10;
+}
+
+[data-theme="dark"] {
+  --background: #0a0a0a;
+  --foreground: #f2f6f8;
+  --primary: #007ba7;
+  --primary-hover: #0890c0;
+  --primary-foreground: #ffffff;
+  --primary-text: #4cc0e8;
+  --secondary: #f2f6f8;
+  --secondary-foreground: #0a0a0a;
+  --accent: #ff2d95;
+  --accent-text: #ff5dae;
+  --surface: rgba(255, 255, 255, 0.045);
+  --surface-strong: #121517;
+  --surface-hover: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --muted: #9aabb4;
+  --muted-surface: rgba(255, 255, 255, 0.05);
+  --glow-primary: rgba(0, 123, 167, 0.22);
+  --glow-accent: rgba(255, 45, 149, 0.12);
+  --shadow-color: 0 0 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Tailwind design tokens                                                    */
+/* ------------------------------------------------------------------------- */
+
+@theme inline {
+  --color-*: initial;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  --color-jade: var(--brand-jade-black);
+  --color-cerulean: var(--brand-cerulean);
+  --color-rose: var(--brand-neon-rose);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-text: var(--primary-text);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-text: var(--accent-text);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-muted: var(--muted);
+  --color-muted-surface: var(--muted-surface);
+
+  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-figtree), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 1.25rem;
+  --radius-card-lg: 1.75rem;
+  --radius-control: 0.75rem;
+  --radius-pill: 9999px;
+
+  --shadow-glass: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 12px 40px -16px rgb(var(--shadow-color) / 0.35);
+  --shadow-glass-hover: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 20px 50px -18px rgb(var(--shadow-color) / 0.45);
+  --shadow-control: 0 8px 24px -12px rgba(0, 123, 167, 0.55);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --default-transition-duration: 220ms;
+  --default-transition-timing-function: var(--ease-out-expo);
+}
+
+/* ------------------------------------------------------------------------- */
+/* Base                                                                      */
+/* ------------------------------------------------------------------------- */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    line-height: 1.6;
+    min-height: 100dvh;
+    overflow-x: clip;
+    transition: background-color 300ms var(--ease-out-expo), color 300ms var(--ease-out-expo);
+  }
+
+  /* Ambient brand wash — fixed, very low opacity, never competes with content. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      radial-gradient(60rem 36rem at 85% -10%, var(--glow-primary), transparent 60%),
+      radial-gradient(40rem 28rem at -10% 110%, var(--glow-accent), transparent 60%);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    line-height: 1.08;
+    text-wrap: balance;
+    font-weight: 600;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: var(--primary);
+    color: var(--primary-foreground);
+  }
+
+  input, select, textarea, button {
+    font: inherit;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+/* Utilities                                                                 */
+/* ------------------------------------------------------------------------- */
+
+/* Glass surface: translucent fill, hairline border, controlled blur. */
+@utility glass {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-glass);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  backdrop-filter: blur(18px) saturate(140%);
+}
+
+@utility glass-strong {
+  background-color: var(--surface-strong);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-glass);
+}
+
+/* Text with a subtle cerulean→rose gradient; used sparingly for one hero phrase. */
+@utility text-gradient-brand {
+  background-image: linear-gradient(100deg, var(--primary-text) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Hairline divider that fades at both ends. */
+@utility rule-fade {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-strong), transparent);
+}
+
+/* Field styles shared by inputs, selects and textareas. */
+@utility field {
+  width: 100%;
+  border-radius: var(--radius-control);
+  border: 1px solid var(--border-strong);
+  background-color: var(--surface);
+  color: var(--foreground);
+  padding: 0.75rem 0.95rem;
+  min-height: 3rem;
+  transition: border-color 160ms var(--ease-out-expo), box-shadow 160ms var(--ease-out-expo), background-color 160ms;
+  &::placeholder {
+    color: var(--muted);
+    opacity: 0.8;
+  }
+  &:hover {
+    border-color: var(--primary);
+  }
+  &:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px var(--glow-primary);
+  }
+  &[aria-invalid="true"] {
+    border-color: var(--accent);
+  }
+}
+
+/* Hides visually, keeps for screen readers (Tailwind has sr-only; kept for clarity in CSS fallback). */
+@utility skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100%;
+  z-index: 100;
+  border-radius: var(--radius-control);
+  background: var(--primary);
+  color: var(--primary-foreground);
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  transition: top 150ms;
+  &:focus-visible {
+    top: 1rem;
+  }
+}
+
+/* Scroll reveals (driven by useReveal): content is visible by default; only
+   below-the-fold elements get data-reveal="pending" and transition in. */
+@utility reveal {
+  transition: opacity 0.6s var(--ease-out-expo), transform 0.6s var(--ease-out-expo);
+  transition-delay: var(--reveal-delay, 0s);
+  &[data-reveal="pending"] {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+}
+
+@utility reveal-group {
+  & > * {
+    transition: opacity 0.55s var(--ease-out-expo), transform 0.55s var(--ease-out-expo);
+  }
+  &[data-reveal="pending"] > * {
+    opacity: 0;
+    transform: translate3d(0, 16px, 0);
+  }
+}
+
+/* Float animation used by the CSS fallback hero visual. */
+@keyframes float-y {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(var(--tilt, 0deg)); }
+  50% { transform: translate3d(0, -10px, 0) rotate(var(--tilt, 0deg)); }
+}
+
+@utility animate-float {
+  animation: float-y 7s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Hero entrance: starts at first paint (no JS), staggered via --enter-delay. */
+@keyframes hero-enter {
+  from { opacity: 0; transform: translate3d(0, 18px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@utility hero-enter {
+  animation: hero-enter 0.8s var(--ease-out-expo) both;
+  animation-delay: var(--enter-delay, 0ms);
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+/* Transform-only variant for the headline and lead paragraph: Chrome defers the
+   LCP timestamp for text that fades in from opacity 0, so the LCP candidates
+   rise into place without a fade and are counted at first paint. */
+@keyframes hero-rise {
+  from { transform: translate3d(0, 18px, 0); }
+  to { transform: translate3d(0, 0, 0); }
+}
+
+@utility hero-rise {
+  animation: hero-rise 0.8s var(--ease-out-expo) both;
+  animation-delay: var(--enter-delay, 0ms);
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}

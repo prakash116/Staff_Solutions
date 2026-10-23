@@ -1,0 +1,31 @@
+{
+  "enabled": true,
+  "isSample": true,
+  "sampleNotice": "Sample testimonials for layout preview only. Replace with genuine client feedback or set \"enabled\" to false to hide this section.",
+  "items": [
+    {
+      "id": "sample-1",
+      "quote": "Sample testimonial text. Describe the hiring requirement, how the process went and the outcome for the business.",
+      "name": "Sample Client Name",
+      "role": "Owner",
+      "company": "Sample Restaurant",
+      "active": true
+    },
+    {
+      "id": "sample-2",
+      "quote": "Sample testimonial text. Keep it specific — role hired, timeline and what worked well.",
+      "name": "Sample Client Name",
+      "role": "Operations Manager",
+      "company": "Sample Hotel",
+      "active": true
+    },
+    {
+      "id": "sample-3",
+      "quote": "Sample testimonial text. Real feedback should be approved by the client before publishing.",
+      "name": "Sample Client Name",
+      "role": "Administrator",
+      "company": "Sample Office",
+      "active": true
+    }
+  ]
+}

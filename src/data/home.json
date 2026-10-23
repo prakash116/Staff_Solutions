@@ -1,0 +1,145 @@
+{
+  "hero": {
+    "headline": "Build Your Team. Grow Your Business.",
+    "subheadline": "Find the right people for your business with a streamlined permanent staffing and recruitment solution — from kitchen and service staff to skilled trades and office roles.",
+    "primaryCta": { "label": "Explore Staff", "href": "/staff-categories" },
+    "secondaryCta": { "label": "Request Staff", "href": "/contact" },
+    "visualCards": [
+      { "label": "Chef", "caption": "Kitchen leadership" },
+      { "label": "Waiter", "caption": "Front of house" },
+      { "label": "Housekeeping", "caption": "Hospitality" },
+      { "label": "Office Assistant", "caption": "Administration" },
+      { "label": "Plumber", "caption": "Skilled trade" },
+      { "label": "Security", "caption": "Premises" },
+      { "label": "Kitchen Helper", "caption": "Back of house" }
+    ],
+    "note": "Permanent placements for businesses. Not a temporary or gig staffing service."
+  },
+  "valueProposition": {
+    "title": "Hiring, organised around how your business actually works",
+    "intro": "Each requirement is captured in a structured way so the right staff category, budget and timeline are clear from the start.",
+    "items": [
+      {
+        "id": "simplified",
+        "title": "Simplified hiring process",
+        "description": "Share your requirement once. We work through category, budget and timeline with you in a clear, step-by-step process.",
+        "icon": "list-checks"
+      },
+      {
+        "id": "categories",
+        "title": "Multiple staffing categories",
+        "description": "Kitchen, service, housekeeping, security, office and skilled trade roles are covered under one engagement.",
+        "icon": "layers"
+      },
+      {
+        "id": "budget",
+        "title": "Budget-oriented hiring",
+        "description": "Indicative salary ranges are shared upfront so you can plan hiring around what your business can sustain.",
+        "icon": "wallet"
+      },
+      {
+        "id": "business-focus",
+        "title": "Business-focused recruitment",
+        "description": "Requirements are discussed with the business owner or manager, not sold as a generic job listing.",
+        "icon": "building-2"
+      },
+      {
+        "id": "structured",
+        "title": "Structured hiring requirements",
+        "description": "Role, headcount, budget and timeline are recorded as a single brief that both sides can refer back to.",
+        "icon": "clipboard-list"
+      }
+    ]
+  },
+  "staffCategories": {
+    "title": "Staff categories",
+    "intro": "Permanent roles commonly requested by restaurants, hotels, offices, stores and commercial establishments.",
+    "viewAll": { "label": "View all categories", "href": "/staff-categories" },
+    "cardCta": "View details"
+  },
+  "services": {
+    "title": "Staffing solutions by industry",
+    "intro": "Services are organised by the type of business you run, so each conversation starts from the roles that matter to you.",
+    "viewAll": { "label": "See all services", "href": "/services" }
+  },
+  "pricing": {
+    "title": "Indicative hiring budgets",
+    "intro": "Employee salary ranges and placement fees are shown separately so there is no confusion about who pays what.",
+    "cta": { "label": "Discuss your budget", "href": "/contact" }
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "intro": "A four-step process from first conversation to a confirmed hire.",
+    "steps": [
+      {
+        "id": "share",
+        "title": "Share your requirements",
+        "description": "Tell us the role, number of employees, location, indicative budget and when you need them.",
+        "icon": "message-square-text"
+      },
+      {
+        "id": "explore",
+        "title": "Explore suitable staff categories",
+        "description": "Review the categories that match your requirement, along with indicative salary ranges.",
+        "icon": "search"
+      },
+      {
+        "id": "review",
+        "title": "Review hiring details",
+        "description": "Confirm the role scope, compensation, placement terms and timeline before anything is finalised.",
+        "icon": "file-check-2"
+      },
+      {
+        "id": "proceed",
+        "title": "Proceed with the hiring process",
+        "description": "Move ahead with shortlisting, interviews and onboarding of the selected permanent employee.",
+        "icon": "handshake"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Our approach to staffing",
+    "intro": "What you can expect from working with us — described plainly, without inflated claims.",
+    "points": [
+      {
+        "id": "permanent",
+        "title": "Permanent placements only",
+        "description": "We focus on employees who join your business on a permanent basis, not short-term or gig arrangements."
+      },
+      {
+        "id": "transparent",
+        "title": "Separate, transparent costs",
+        "description": "Employee salary and recruitment fees are always presented as distinct figures."
+      },
+      {
+        "id": "operational",
+        "title": "Operational roles understood",
+        "description": "Kitchens, floors, housekeeping and maintenance have different rhythms. Requirements are discussed in those terms."
+      },
+      {
+        "id": "single-brief",
+        "title": "One brief, one point of contact",
+        "description": "Your requirement is documented once and followed through by the same team."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "headline": "Ready to Build Your Team?",
+    "text": "Tell us about your staffing requirements and discover a suitable hiring solution for your business.",
+    "cta": { "label": "Request Staff", "href": "/contact" }
+  },
+  "testimonials": {
+    "title": "What businesses say",
+    "intro": "Feedback from businesses that have hired through us."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "intro": "Common questions about permanent hiring, budgets and how to get started."
+  },
+  "finalCta": {
+    "headline": "Start with a single requirement",
+    "text": "Share the role you need to fill. We will come back with suitable categories and indicative budgets.",
+    "primaryCta": { "label": "Request Staff", "href": "/contact" },
+    "secondaryCta": { "label": "Browse categories", "href": "/staff-categories" }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "title": "A staffing partner for businesses that need permanent people",
+    "intro": "We help businesses hire permanent employees for operational, service, skilled trade and office roles — with clear requirements and transparent budgets."
+  },
+  "introduction": {
+    "title": "Who we are",
+    "paragraphs": [
+      "StaffHiring is a permanent staffing and recruitment service for businesses. We work with restaurants, hotels, cafes, cloud kitchens, corporate offices, retail stores and commercial establishments that need reliable people in long-term roles.",
+      "Sample content: company background, team details and history will be added once the actual business information is provided. No founding date, certifications or achievements are claimed on this page."
+    ]
+  },
+  "mission": {
+    "title": "Mission",
+    "text": "To make permanent hiring straightforward for businesses by documenting requirements clearly, sharing budgets honestly and following each requirement through to a confirmed hire."
+  },
+  "vision": {
+    "title": "Vision",
+    "text": "A hiring experience where every business, regardless of size, can build a stable team with the same clarity and structure that larger organisations take for granted."
+  },
+  "approach": {
+    "title": "How we approach each requirement",
+    "intro": "The same structured process applies whether a business needs one kitchen helper or a full front-of-house team.",
+    "items": [
+      {
+        "id": "listen",
+        "title": "Understand the business first",
+        "description": "Role titles mean different things in different establishments. We start with how your operation runs day to day.",
+        "icon": "ear"
+      },
+      {
+        "id": "document",
+        "title": "Document the requirement",
+        "description": "Role, headcount, shift pattern, budget and timeline are captured in one brief that both sides agree on.",
+        "icon": "file-text"
+      },
+      {
+        "id": "budget",
+        "title": "Be clear about money",
+        "description": "Employee salary and recruitment fees are discussed as separate figures, with estimates marked as estimates.",
+        "icon": "wallet"
+      },
+      {
+        "id": "follow-through",
+        "title": "Follow through",
+        "description": "One point of contact stays with the requirement from the first conversation to onboarding.",
+        "icon": "route"
+      }
+    ]
+  },
+  "philosophy": {
+    "title": "Our staffing philosophy",
+    "paragraphs": [
+      "Permanent roles deserve a permanent-hiring mindset. A good placement is one where the employee understands the business they are joining and the business understands the person it is bringing on.",
+      "We avoid overpromising. Where information is indicative — such as salary ranges — it is labelled as indicative. Where terms depend on the specific requirement, we say so."
+    ]
+  },
+  "industries": {
+    "title": "Industries we serve",
+    "intro": "Businesses across hospitality, commercial and professional settings.",
+    "items": [
+      { "id": "restaurants", "name": "Restaurants and hotels", "icon": "utensils", "description": "Kitchen, service and housekeeping teams." },
+      { "id": "cafes", "name": "Cafes and cloud kitchens", "icon": "coffee", "description": "Compact teams for high-turnover food operations." },
+      { "id": "offices", "name": "Corporate offices", "icon": "building-2", "description": "Office assistants, utility and support staff." },
+      { "id": "retail", "name": "Retail stores and showrooms", "icon": "store", "description": "Floor, helper and security staff." },
+      { "id": "commercial", "name": "Commercial establishments", "icon": "warehouse", "description": "Maintenance, security and general operations." },
+      { "id": "smb", "name": "Small and medium businesses", "icon": "briefcase", "description": "Any permanent role a growing business needs filled." }
+    ]
+  },
+  "process": {
+    "title": "Hiring process overview",
+    "intro": "The same four steps apply to every requirement."
+  },
+  "cta": {
+    "headline": "Talk to us about your next hire",
+    "text": "Share your requirement and we will respond with suitable categories and indicative budgets.",
+    "cta": { "label": "Contact us", "href": "/contact" }
+  }
+}

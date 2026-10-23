@@ -1,0 +1,33 @@
+{
+  "name": "StaffHiring",
+  "legalName": "StaffHiring (Sample Company Name — replace with registered business name)",
+  "tagline": "Permanent staffing and recruitment for businesses",
+  "description": "StaffHiring helps restaurants, hotels, offices, retail stores and other businesses hire permanent employees across operational, service and skilled trade roles.",
+  "url": "http://localhost:3000",
+  "locale": "en_IN",
+  "logo": {
+    "text": "StaffHiring",
+    "mark": "/images/branding/logo-mark.svg"
+  },
+  "contact": {
+    "email": "hello@example.com",
+    "phone": "+91 00000 00000",
+    "whatsapp": "+91 00000 00000",
+    "address": {
+      "line1": "Sample Address Line 1",
+      "line2": "Sample Business Park",
+      "city": "Sample City",
+      "state": "Sample State",
+      "postalCode": "000000",
+      "country": "India"
+    },
+    "businessHours": "Monday to Saturday, 10:00 AM – 7:00 PM IST"
+  },
+  "social": [
+    { "id": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/", "icon": "linkedin", "active": true },
+    { "id": "instagram", "label": "Instagram", "url": "https://www.instagram.com/", "icon": "instagram", "active": true },
+    { "id": "facebook", "label": "Facebook", "url": "https://www.facebook.com/", "icon": "facebook", "active": false }
+  ],
+  "demoMode": true,
+  "placeholderNotice": "Sample content — replace with actual business information before launch."
+}

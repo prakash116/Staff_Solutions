@@ -1,0 +1,14 @@
+{
+  "description": "Permanent staffing and recruitment for restaurants, hotels, offices, stores and commercial businesses.",
+  "columns": {
+    "quickLinks": { "title": "Company" },
+    "services": { "title": "Services", "max": 6 },
+    "categories": { "title": "Staff categories", "max": 7 },
+    "contact": { "title": "Contact" }
+  },
+  "legalLinks": [
+    { "label": "Privacy Policy", "href": "/privacy" },
+    { "label": "Terms of Service", "href": "/terms" }
+  ],
+  "copyright": "© {year} {name}. All rights reserved."
+}

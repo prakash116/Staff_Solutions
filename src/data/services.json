@@ -1,0 +1,82 @@
+{
+  "services": [
+    {
+      "id": "restaurant-staffing",
+      "slug": "restaurant-staffing",
+      "name": "Restaurant Staffing",
+      "shortDescription": "Permanent kitchen and service teams for restaurants, cafes and cloud kitchens.",
+      "description": "From head chefs and line cooks to waiters and kitchen helpers, we help food businesses hire permanent staff who understand service rhythm and kitchen discipline. Requirements are discussed by section — kitchen, floor and support — so headcount and budgets are planned realistically.",
+      "icon": "utensils",
+      "image": null,
+      "businessTypes": ["Restaurants", "Cafes", "Cloud kitchens", "Bakeries", "Catering businesses"],
+      "categoryIds": ["chef", "kitchen-helper", "waiter", "utility-staff", "general-helper"],
+      "featured": true,
+      "active": true
+    },
+    {
+      "id": "hospitality-staffing",
+      "slug": "hospitality-staffing",
+      "name": "Hospitality Staffing",
+      "shortDescription": "Housekeeping, front-of-house and support staff for hotels and guest houses.",
+      "description": "Hotels, resorts and guest houses depend on consistent housekeeping and guest-facing teams. We help hire permanent housekeeping staff, waiters, utility staff and security personnel suited to hospitality environments.",
+      "icon": "hotel",
+      "image": null,
+      "businessTypes": ["Hotels", "Resorts", "Guest houses", "Banquet venues"],
+      "categoryIds": ["housekeeping-staff", "waiter", "utility-staff", "security-staff", "chef"],
+      "featured": true,
+      "active": true
+    },
+    {
+      "id": "office-staffing",
+      "slug": "office-staffing",
+      "name": "Office Staffing",
+      "shortDescription": "Office assistants, utility and support staff for corporate workplaces.",
+      "description": "Offices need dependable people who keep the workplace running — office assistants, pantry and utility staff, housekeeping and security. We help businesses fill these permanent roles with clear job scopes.",
+      "icon": "building-2",
+      "image": null,
+      "businessTypes": ["Corporate offices", "Co-working spaces", "Clinics", "Agencies", "Startups"],
+      "categoryIds": ["office-assistant", "utility-staff", "housekeeping-staff", "security-staff"],
+      "featured": true,
+      "active": true
+    },
+    {
+      "id": "retail-staffing",
+      "slug": "retail-staffing",
+      "name": "Retail Staffing",
+      "shortDescription": "Floor helpers, housekeeping and security staff for stores and showrooms.",
+      "description": "Retail stores and showrooms need permanent staff who are presentable, punctual and comfortable with customers. We assist with general helpers, housekeeping and security staff for retail environments.",
+      "icon": "store",
+      "image": null,
+      "businessTypes": ["Retail stores", "Showrooms", "Supermarkets", "Boutiques"],
+      "categoryIds": ["general-helper", "housekeeping-staff", "security-staff", "office-assistant"],
+      "featured": true,
+      "active": true
+    },
+    {
+      "id": "maintenance-skilled",
+      "slug": "maintenance-and-skilled-workforce",
+      "name": "Maintenance and Skilled Workforce",
+      "shortDescription": "Plumbers, carpenters, painters and maintenance staff on permanent rolls.",
+      "description": "For businesses that need in-house maintenance capability, we help hire permanent plumbers, carpenters, painters and general maintenance staff. Skill level, tools familiarity and site requirements are discussed before shortlisting.",
+      "icon": "wrench",
+      "image": null,
+      "businessTypes": ["Commercial buildings", "Hotels", "Facility management companies", "Housing societies", "Factories"],
+      "categoryIds": ["plumber", "carpenter", "painter", "utility-staff"],
+      "featured": true,
+      "active": true
+    },
+    {
+      "id": "custom-staffing",
+      "slug": "custom-business-staffing",
+      "name": "Custom Business Staffing",
+      "shortDescription": "Permanent roles that do not fit a standard category.",
+      "description": "If your requirement spans multiple categories or is specific to your business, share it with us. We document the role, discuss a realistic budget and work out a hiring approach that fits.",
+      "icon": "sparkles",
+      "image": null,
+      "businessTypes": ["Small and medium businesses", "Multi-outlet businesses", "New establishments"],
+      "categoryIds": ["other-staff"],
+      "featured": false,
+      "active": true
+    }
+  ]
+}

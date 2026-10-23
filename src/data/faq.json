@@ -1,0 +1,53 @@
+{
+  "items": [
+    {
+      "id": "permanent-hiring",
+      "question": "Do you provide permanent employees or temporary staff?",
+      "answer": "We focus on permanent employee placement. The people we help you hire join your business on your payroll as long-term employees. We do not operate a temporary, contract or gig staffing service.",
+      "category": "Permanent hiring",
+      "active": true
+    },
+    {
+      "id": "categories",
+      "question": "Which staff categories can I hire?",
+      "answer": "Current categories include chefs, kitchen helpers, waiters, general helpers, utility staff, plumbers, carpenters, painters, housekeeping staff, security staff and office assistants. If your requirement falls outside these, describe it in your request and we will discuss it with you.",
+      "category": "Staff categories",
+      "active": true
+    },
+    {
+      "id": "budgets",
+      "question": "How do the hiring budgets work?",
+      "answer": "The salary ranges shown on this website are indicative figures for what the employee would be paid by your business. Any placement or recruitment fee is a separate amount and is confirmed with you before hiring proceeds. Nothing on the website is a binding quote.",
+      "category": "Hiring budgets",
+      "active": true
+    },
+    {
+      "id": "process",
+      "question": "What does the recruitment process look like?",
+      "answer": "You share your requirement, we identify suitable staff categories, you review the hiring details including compensation and timeline, and then shortlisting, interviews and onboarding proceed. Each step is confirmed with you before moving on.",
+      "category": "Recruitment process",
+      "active": true
+    },
+    {
+      "id": "requirements",
+      "question": "What information do you need from my business?",
+      "answer": "The role or category, number of employees, work location, shift pattern, an indicative monthly budget and your preferred hiring timeline. Anything else specific to your business is helpful but can be discussed later.",
+      "category": "Business requirements",
+      "active": true
+    },
+    {
+      "id": "multiple-roles",
+      "question": "Can I request more than one role at a time?",
+      "answer": "Yes. Many businesses hire for several categories together — for example a chef, two kitchen helpers and a waiter for a new outlet. Mention each role and headcount in your request.",
+      "category": "Business requirements",
+      "active": true
+    },
+    {
+      "id": "contact",
+      "question": "How do I get in touch?",
+      "answer": "Use the request form on the Contact page or reach us by phone or email using the details in the website footer. The contact form on this website currently runs in demo mode and does not send requests until a backend is connected.",
+      "category": "Contacting us",
+      "active": true
+    }
+  ]
+}

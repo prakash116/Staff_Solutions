@@ -1,0 +1,57 @@
+{
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "This page describes how information shared through this website is handled.",
+    "lastUpdated": "Not yet published",
+    "isPlaceholder": true,
+    "placeholderNotice": "Placeholder policy. Replace this content with a privacy policy reviewed for your business and jurisdiction before launch.",
+    "sections": [
+      {
+        "heading": "Information you share",
+        "paragraphs": [
+          "When you submit a staffing request, you may share your name, company name, business email, phone number and details of your requirement. This information is used only to respond to your request.",
+          "In the current demo build of this website, form submissions are validated in your browser and are not transmitted or stored."
+        ]
+      },
+      {
+        "heading": "Cookies and local storage",
+        "paragraphs": [
+          "This website stores your theme preference (light or dark) in your browser's local storage. No tracking cookies are set by default."
+        ]
+      },
+      {
+        "heading": "Contact",
+        "paragraphs": [
+          "Questions about this policy can be sent to the contact email listed in the website footer."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "intro": "These terms govern the use of this website.",
+    "lastUpdated": "Not yet published",
+    "isPlaceholder": true,
+    "placeholderNotice": "Placeholder terms. Replace this content with terms reviewed by a qualified professional before launch.",
+    "sections": [
+      {
+        "heading": "Indicative information",
+        "paragraphs": [
+          "Salary ranges, budgets and other figures displayed on this website are indicative and do not constitute a quotation, offer or guarantee. Actual terms are confirmed in writing for each requirement."
+        ]
+      },
+      {
+        "heading": "Scope of service",
+        "paragraphs": [
+          "The company provides permanent staffing and recruitment assistance to businesses. Employment relationships are between the hiring business and the employee."
+        ]
+      },
+      {
+        "heading": "Website content",
+        "paragraphs": [
+          "Content on this website may be updated without notice. Sample content is clearly labelled as such until actual business information is published."
+        ]
+      }
+    ]
+  }
+}
