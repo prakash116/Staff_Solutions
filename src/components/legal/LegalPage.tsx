@@ -23,7 +23,7 @@ export function LegalPage({ page }: { page: LegalPageData }) {
               </div>
             </section>
           ))}
-        </AnimatedSection>
+        </AnimatedSection> 
       </SectionWrapper>
     </>
   );
