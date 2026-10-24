@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -57,6 +58,18 @@ export default async function StaffCategoryDetailPage({ params }: PageProps) {
               <ArrowLeft aria-hidden="true" size={16} />
               All staff categories
             </Link>
+            {category.image ? (
+              <div className="relative mt-6 aspect-21/9 overflow-hidden rounded-card-lg border border-border">
+                <Image
+                  src={category.image}
+                  alt={`${category.name} placed by Aurevia Staffing Solution`}
+                  fill
+                  priority
+                  sizes="(min-width: 1280px) 1200px, 100vw"
+                  className="object-cover object-[center_35%]"
+                />
+              </div>
+            ) : null}
             <div className="mt-6 flex items-start gap-5">
               <IconBadge name={category.icon} className="size-14 rounded-[1.1rem] [&_svg]:size-7" />
               <div>

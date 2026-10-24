@@ -42,6 +42,7 @@
   "info": {
     "title": "Contact details",
     "intro": "Prefer to talk? Reach us directly during business hours.",
+    "image": "/images/services/hospitality-staffing.webp",
     "emailLabel": "Email",
     "phoneLabel": "Phone",
     "addressLabel": "Office",

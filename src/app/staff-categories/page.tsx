@@ -32,7 +32,7 @@ export default function StaffCategoriesPage() {
         />
       </SectionWrapper>
 
-      <CTASection id="categories" headline={ctaBanner.headline} text={ctaBanner.text} primaryCta={ctaBanner.cta} variant="banner" />
+      <CTASection id="categories" headline={ctaBanner.headline} text={ctaBanner.text} primaryCta={ctaBanner.cta} variant="banner" image={ctaBanner.image} />
     </>
   );
 }

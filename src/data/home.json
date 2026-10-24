@@ -100,6 +100,7 @@
   "whyChooseUs": {
     "title": "Our approach to staffing",
     "intro": "What you can expect from working with us — described plainly, without inflated claims.",
+    "image": "/images/services/custom-business-staffing.webp",
     "points": [
       {
         "id": "permanent",
@@ -126,7 +127,8 @@
   "ctaBanner": {
     "headline": "Ready to Build Your Team?",
     "text": "Tell us about your staffing requirements and discover a suitable hiring solution for your business.",
-    "cta": { "label": "Request Staff", "href": "/contact" }
+    "cta": { "label": "Request Staff", "href": "/contact" },
+    "image": "/images/services/restaurant-team.webp"
   },
   "testimonials": {
     "title": "What businesses say",

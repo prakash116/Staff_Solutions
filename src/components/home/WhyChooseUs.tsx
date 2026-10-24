@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import Image from "next/image";
 
 import { AnimatedSection, StaggerGroup, StaggerItem } from "@/components/ui/AnimatedSection";
 import { GlassCard } from "@/components/ui/GlassCard";
@@ -18,6 +19,11 @@ export function WhyChooseUs() {
               {whyChooseUs.title}
             </h2>
             <p className="mt-4 max-w-prose text-base text-muted sm:text-lg">{whyChooseUs.intro}</p>
+            {whyChooseUs.image ? (
+              <div className="relative mt-8 aspect-4/3 overflow-hidden rounded-card border border-border">
+                <Image src={whyChooseUs.image} alt="" fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
+              </div>
+            ) : null}
           </AnimatedSection>
           <StaggerGroup as="ul" className="grid gap-x-8 gap-y-7 sm:grid-cols-2">
             {whyChooseUs.points.map((p) => (

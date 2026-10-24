@@ -51,7 +51,7 @@ export default function ServicesPage() {
         )}
       </SectionWrapper>
 
-      <CTASection id="services" headline={ctaBanner.headline} text={ctaBanner.text} primaryCta={ctaBanner.cta} variant="banner" />
+      <CTASection id="services" headline={ctaBanner.headline} text={ctaBanner.text} primaryCta={ctaBanner.cta} variant="banner" image={ctaBanner.image} />
     </>
   );
 }

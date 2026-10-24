@@ -92,7 +92,7 @@
         "General errands"
       ],
       "pricingId": "general-helper-monthly",
-      "featured": false,
+      "featured": true,
       "active": true
     },
     {
@@ -138,7 +138,7 @@
         "Preventive checks"
       ],
       "pricingId": "plumber-monthly",
-      "featured": true,
+      "featured": false,
       "active": true
     },
     {
@@ -232,7 +232,7 @@
         "Incident reporting"
       ],
       "pricingId": "security-monthly",
-      "featured": true,
+      "featured": false,
       "active": true
     },
     {
@@ -255,7 +255,7 @@
         "Basic data entry"
       ],
       "pricingId": "office-assistant-monthly",
-      "featured": true,
+      "featured": false,
       "active": true
     },
     {

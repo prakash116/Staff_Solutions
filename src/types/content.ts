@@ -32,9 +32,12 @@ export interface HomeData {
   whyChooseUs: {
     title: string;
     intro: string;
+    /** Optional photo shown beside the intro. */
+    image?: string | null;
     points: { id: string; title: string; description: string }[];
   };
-  ctaBanner: { headline: string; text: string; cta: Cta };
+  /** `image` (optional) is used as a darkened background photo behind the banner. */
+  ctaBanner: { headline: string; text: string; cta: Cta; image?: string | null };
   testimonials: { title: string; intro: string };
   faq: { title: string; intro: string };
   finalCta: { headline: string; text: string; primaryCta: Cta; secondaryCta: Cta };
@@ -42,7 +45,7 @@ export interface HomeData {
 
 export interface AboutData {
   hero: { title: string; intro: string };
-  introduction: { title: string; paragraphs: string[] };
+  introduction: { title: string; paragraphs: string[]; image?: string | null; imageAlt?: string };
   mission: { title: string; text: string };
   vision: { title: string; text: string };
   approach: { title: string; intro: string; items: IconItem[] };
@@ -107,6 +110,8 @@ export interface ContactData {
   info: {
     title: string;
     intro: string;
+    /** Optional photo shown at the top of the contact details card. */
+    image?: string | null;
     emailLabel: string;
     phoneLabel: string;
     addressLabel: string;

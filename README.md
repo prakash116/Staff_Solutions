@@ -124,6 +124,19 @@ Currency formatting uses `Intl.NumberFormat("en-IN")`, so INR values use the Ind
 
 Put files under `public/images/staff/`, `public/images/services/` or `public/images/branding/` and reference them from JSON, e.g. `"image": "/images/staff/chef.webp"`. Cards render the image via `next/image` when present and fall back to the icon when `null`. Staff and service photos are 1280px-wide WebP exports; the original uploads live in `assets-source/` (not served).
 
+Every image slot is optional and configured in JSON — set it to `null` to hide it:
+
+| Slot | JSON field |
+| --- | --- |
+| Staff category card + detail-page hero | `staff-categories.json → categories[].image` |
+| Services page card banner | `services.json → services[].image` |
+| "Ready to build your team?" banner background (home, services, categories, about) | `home.json → ctaBanner.image` |
+| "Our approach to staffing" photo (home) | `home.json → whyChooseUs.image` |
+| "Who we are" photo (about) | `about.json → introduction.image` / `imageAlt` |
+| Contact details card photo | `contact.json → info.image` |
+
+The six categories with `featured: true` appear on the homepage; they are currently the six that have photos so the grid reads uniformly.
+
 Branding assets (all generated from `assets-source/logo-original.jpeg`):
 
 - `public/images/branding/logo-mark.png` — transparent "A" mark used in the header (`site.json → logo.mark`)

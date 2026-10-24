@@ -8,7 +8,9 @@
     "paragraphs": [
       "Aurevia Staffing Solution is a permanent staffing and recruitment service for businesses. We work with restaurants, hotels, cafes, cloud kitchens, corporate offices, retail stores and commercial establishments that need reliable people in long-term roles.",
       "Sample content: company background, team details and history will be added once the actual business information is provided. No founding date, certifications or achievements are claimed on this page."
-    ]
+    ],
+    "image": "/images/services/restaurant-staffing.webp",
+    "imageAlt": "Two Aurevia-placed chefs plating dishes in a restaurant kitchen"
   },
   "mission": {
     "title": "Mission",

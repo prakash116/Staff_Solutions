@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 import { CTASection } from "@/components/home/CTASection";
 import { HowItWorks } from "@/components/home/HowItWorks";
@@ -9,7 +10,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { SampleNotice } from "@/components/ui/SampleNotice";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
-import { getAbout, getSite } from "@/lib/data";
+import { getAbout, getHome, getSite } from "@/lib/data";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({ page: "about", path: "/about" });
@@ -35,6 +36,17 @@ export default function AboutPage() {
               ))}
             </div>
             {site.demoMode ? <SampleNotice className="mt-6">{site.placeholderNotice}</SampleNotice> : null}
+            {about.introduction.image ? (
+              <div className="relative mt-8 aspect-video overflow-hidden rounded-card border border-border">
+                <Image
+                  src={about.introduction.image}
+                  alt={about.introduction.imageAlt ?? ""}
+                  fill
+                  sizes="(min-width: 1024px) 60vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            ) : null}
           </AnimatedSection>
           <AnimatedSection delay={0.1} className="grid gap-5 self-start">
             <GlassCard>
@@ -105,7 +117,7 @@ export default function AboutPage() {
 
       <HowItWorks id="process" title={about.process.title} intro={about.process.intro} />
 
-      <CTASection id="about" headline={about.cta.headline} text={about.cta.text} primaryCta={about.cta.cta} variant="banner" />
+      <CTASection id="about" headline={about.cta.headline} text={about.cta.text} primaryCta={about.cta.cta} variant="banner" image={getHome().ctaBanner.image} />
     </>
   );
 }

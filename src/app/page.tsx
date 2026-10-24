@@ -27,7 +27,7 @@ export default function HomePage() {
       <PricingSection />
       <HowItWorks />
       <WhyChooseUs />
-      <CTASection id="request" headline={ctaBanner.headline} text={ctaBanner.text} primaryCta={ctaBanner.cta} variant="banner" />
+      <CTASection id="request" headline={ctaBanner.headline} text={ctaBanner.text} primaryCta={ctaBanner.cta} variant="banner" image={ctaBanner.image} />
       <TestimonialsSection />
       <FAQSection />
       <CTASection

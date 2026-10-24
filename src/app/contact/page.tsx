@@ -1,5 +1,6 @@
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Suspense } from "react";
 
 import { ContactForm } from "@/components/contact/ContactForm";
@@ -37,7 +38,13 @@ export default function ContactPage() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.1} className="space-y-5 lg:sticky lg:top-28 lg:self-start">
-            <GlassCard>
+            <GlassCard padding="none" className="overflow-hidden">
+              {contact.info.image ? (
+                <div className="relative aspect-video border-b border-border">
+                  <Image src={contact.info.image} alt="" fill sizes="(min-width: 1024px) 35vw, 100vw" className="object-cover" />
+                </div>
+              ) : null}
+              <div className="p-6 sm:p-7">
               <h2 className="text-xl font-semibold">{contact.info.title}</h2>
               <p className="mt-1 text-sm text-muted">{contact.info.intro}</p>
               {site.demoMode ? <SampleNotice className="mt-4">{site.placeholderNotice}</SampleNotice> : null}
@@ -93,6 +100,7 @@ export default function ContactPage() {
                   </ul>
                 </div>
               ) : null}
+              </div>
             </GlassCard>
           </AnimatedSection>
         </div>
