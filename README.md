@@ -113,6 +113,7 @@ Edit `src/data/pricing.json`. Each row has:
 
 - `salaryMin` / `salaryMax` — indicative monthly salary paid **by the business to the employee** (either may be `null`).
 - `placementFee` — the recruitment fee charged separately. Leave `null` until confirmed; the UI then shows "On request" and never computes a fee.
+- `dailyRate` — optional per-day booking rate (currently chef ₹1,500 and waiter ₹1,000). `null` shows "Not offered".
 - `isEstimate` — `true` renders the "Estimate" marker; set `false` once confirmed.
 - `notes` — short free text under the role name.
 

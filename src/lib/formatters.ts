@@ -43,6 +43,11 @@ export function formatBillingPeriod(period: string): string {
   }
 }
 
+/** "₹1,500 per day" or null when daily booking is not offered for the role. */
+export function formatDailyRate(item: PricingItem, currency: string): string | null {
+  return item.dailyRate == null ? null : `${formatCurrency(item.dailyRate, currency)} per day`;
+}
+
 export function formatPlacementFee(
   item: PricingItem,
   currency: string,

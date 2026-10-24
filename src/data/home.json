@@ -63,8 +63,8 @@
     "viewAll": { "label": "See all services", "href": "/services" }
   },
   "pricing": {
-    "title": "Indicative hiring budgets",
-    "intro": "Employee salary ranges and placement fees are shown separately so there is no confusion about who pays what.",
+    "title": "Hiring budgets",
+    "intro": "Monthly salary, daily booking rates and placement fees are shown separately so there is no confusion about who pays what. Chefs and waiters can also be booked per day.",
     "cta": { "label": "Discuss your budget", "href": "/contact" }
   },
   "howItWorks": {

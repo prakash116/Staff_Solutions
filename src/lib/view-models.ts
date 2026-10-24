@@ -1,5 +1,5 @@
 import { getPricing, getPricingForCategory } from "@/lib/data";
-import { formatBillingPeriod, formatSalaryRange } from "@/lib/formatters";
+import { formatBillingPeriod, formatDailyRate, formatSalaryRange } from "@/lib/formatters";
 import type { StaffCategory } from "@/types";
 
 /**
@@ -16,6 +16,8 @@ export interface StaffCardModel {
   industries: string[];
   featured: boolean;
   salary: { label: string; period: string; isEstimate: boolean } | null;
+  /** Pre-formatted daily booking rate, e.g. "₹1,500 per day"; null when not offered. */
+  daily: string | null;
 }
 
 export function toStaffCardModel(category: StaffCategory): StaffCardModel {
@@ -36,5 +38,6 @@ export function toStaffCardModel(category: StaffCategory): StaffCardModel {
       item && salaryLabel
         ? { label: salaryLabel, period: formatBillingPeriod(item.billingPeriod), isEstimate: item.isEstimate }
         : null,
+    daily: item ? formatDailyRate(item, pricing.currency) : null,
   };
 }

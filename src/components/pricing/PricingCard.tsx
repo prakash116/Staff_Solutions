@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/Badge";
 import { GlassCard } from "@/components/ui/GlassCard";
-import { formatBillingPeriod, formatPlacementFee, formatSalaryRange } from "@/lib/formatters";
+import { formatBillingPeriod, formatDailyRate, formatPlacementFee, formatSalaryRange } from "@/lib/formatters";
 import type { PricingData, PricingItem } from "@/types";
 
 interface PricingCardProps {
@@ -10,8 +10,9 @@ interface PricingCardProps {
 }
 
 /** Budget summary for a single staff category (used on detail pages). */
-export function PricingCard({ item, pricing, title = "Indicative budget" }: PricingCardProps) {
+export function PricingCard({ item, pricing, title = "Hiring budget" }: PricingCardProps) {
   const salary = formatSalaryRange(item, pricing.currency);
+  const daily = formatDailyRate(item, pricing.currency);
   const fee = formatPlacementFee(item, pricing.currency, pricing.placementFeeUnavailableLabel);
 
   return (
@@ -27,6 +28,12 @@ export function PricingCard({ item, pricing, title = "Indicative budget" }: Pric
           <dd className="mt-1 font-display text-2xl font-semibold">
             {salary ?? "Not configured"}
             {salary ? <span className="ml-2 text-sm font-normal text-muted">{formatBillingPeriod(item.billingPeriod)}</span> : null}
+          </dd>
+        </div>
+        <div className="border-t border-border pt-5">
+          <dt className="text-sm text-muted">{pricing.dailyRateLabel}</dt>
+          <dd className={"mt-1 font-display text-xl font-semibold " + (daily ? "text-primary-text" : "text-muted")}>
+            {daily ?? pricing.dailyRateUnavailableLabel}
           </dd>
         </div>
         <div className="border-t border-border pt-5">

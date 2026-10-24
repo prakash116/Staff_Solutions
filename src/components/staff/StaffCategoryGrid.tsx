@@ -12,7 +12,7 @@ import type { StaffCardModel } from "@/lib/view-models";
 interface StaffCategoryGridProps {
   categories: StaffCardModel[];
   industries: string[];
-  labels: { cardCta: string; estimate: string; salary: string };
+  labels: { cardCta: string; estimate: string; salary: string; daily: string };
   /** When false, renders the grid without search/filter controls. */
   searchable?: boolean;
   /** Heading level for card titles; use h2 when the grid is directly under the page h1. */
@@ -87,7 +87,7 @@ export function StaffCategoryGrid({ categories, industries, labels, searchable =
         <StaggerGroup as="ul" className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3" key={`${query}-${industry}`}>
           {filtered.map((c) => (
             <StaggerItem key={c.id} as="li" className="h-full">
-              <StaffCategoryCard category={c} ctaLabel={labels.cardCta} estimateLabel={labels.estimate} salaryLabel={labels.salary} headingLevel={headingLevel} />
+              <StaffCategoryCard category={c} ctaLabel={labels.cardCta} estimateLabel={labels.estimate} salaryLabel={labels.salary} dailyLabel={labels.daily} headingLevel={headingLevel} />
             </StaggerItem>
           ))}
         </StaggerGroup>

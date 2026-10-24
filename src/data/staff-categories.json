@@ -163,7 +163,7 @@
       "icon": "users",
       "image": null,
       "industries": ["Any"],
-      "pricingId": null,
+      "pricingId": "other-staff-monthly",
       "featured": false,
       "active": true
     }

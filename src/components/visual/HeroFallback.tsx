@@ -22,7 +22,7 @@ const placements = [
 export function HeroFallback({ cards, still = false }: HeroFallbackProps) {
   const visible = cards.slice(0, placements.length);
   return (
-    <div className="relative mx-auto aspect-[5/4] w-full max-w-[34rem]" aria-hidden="true">
+    <div className="relative mx-auto aspect-5/4 w-full max-w-136" aria-hidden="true">
       <div className="absolute inset-[12%] rounded-full bg-primary/15 blur-3xl" />
       {visible.map((card, i) => (
         <div

@@ -33,7 +33,7 @@ export function StaffCategoriesSection() {
         categories={featured}
         industries={getStaffIndustries()}
         searchable={false}
-        labels={{ cardCta: staffCategories.cardCta, estimate: pricing.estimateLabel, salary: pricing.salaryLabel }}
+        labels={{ cardCta: staffCategories.cardCta, estimate: pricing.estimateLabel, salary: pricing.salaryLabel, daily: pricing.dailyRateLabel }}
       />
     </SectionWrapper>
   );

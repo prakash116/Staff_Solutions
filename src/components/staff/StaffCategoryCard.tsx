@@ -12,18 +12,19 @@ interface StaffCategoryCardProps {
   ctaLabel: string;
   estimateLabel: string;
   salaryLabel: string;
+  dailyLabel: string;
   /** h3 under a section heading (home); h2 when the grid sits directly under the page h1. */
   headingLevel?: "h2" | "h3";
 }
 
-export function StaffCategoryCard({ category, ctaLabel, estimateLabel, salaryLabel, headingLevel = "h3" }: StaffCategoryCardProps) {
+export function StaffCategoryCard({ category, ctaLabel, estimateLabel, salaryLabel, dailyLabel, headingLevel = "h3" }: StaffCategoryCardProps) {
   const href = `/staff-categories/${category.slug}`;
   const Heading = headingLevel;
 
   return (
     <GlassCard as="article" interactive padding="none" className="group flex h-full flex-col overflow-hidden">
       {category.image ? (
-        <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-border">
+        <div className="relative aspect-video w-full overflow-hidden border-b border-border">
           <Image src={category.image} alt={`${category.name} staff`} fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
         </div>
       ) : null}
@@ -61,6 +62,12 @@ export function StaffCategoryCard({ category, ctaLabel, estimateLabel, salaryLab
               <dd className="mt-1 font-display text-lg font-semibold text-foreground">
                 {category.salary.label} <span className="text-sm font-normal text-muted">{category.salary.period}</span>
               </dd>
+              {category.daily ? (
+                <>
+                  <dt className="mt-2 text-xs text-muted">{dailyLabel}</dt>
+                  <dd className="mt-0.5 text-sm font-semibold text-primary-text">{category.daily}</dd>
+                </>
+              ) : null}
             </dl>
           ) : (
             <p className="border-t border-border pt-4 text-sm text-muted">Budget discussed per requirement.</p>

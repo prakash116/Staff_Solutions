@@ -8,6 +8,8 @@ export interface PricingItem {
   salaryMax: number | null;
   /** Recruitment / placement fee charged by the company. null = not configured. */
   placementFee: number | null;
+  /** Optional per-day booking rate for roles that can be booked daily. null = not offered. */
+  dailyRate: number | null;
   billingPeriod: string;
   isEstimate: boolean;
   active: boolean;
@@ -20,6 +22,8 @@ export interface PricingData {
   salaryLabel: string;
   placementFeeLabel: string;
   placementFeeUnavailableLabel: string;
+  dailyRateLabel: string;
+  dailyRateUnavailableLabel: string;
   estimateLabel: string;
   confirmedLabel: string;
   items: PricingItem[];
