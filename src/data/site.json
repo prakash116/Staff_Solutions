@@ -1,13 +1,15 @@
 {
-  "name": "StaffHiring",
-  "legalName": "StaffHiring (Sample Company Name — replace with registered business name)",
+  "name": "Aurevia Staffing Solution",
+  "legalName": "Aurevia Staffing Solution",
   "tagline": "Permanent staffing and recruitment for businesses",
-  "description": "StaffHiring helps restaurants, hotels, offices, retail stores and other businesses hire permanent employees across operational, service and skilled trade roles.",
+  "description": "Aurevia Staffing Solution helps restaurants, hotels, offices, retail stores and other businesses hire permanent employees across operational, service and skilled trade roles.",
   "url": "http://localhost:3000",
   "locale": "en_IN",
   "logo": {
-    "text": "StaffHiring",
-    "mark": "/images/branding/logo-mark.svg"
+    "text": "Aurevia",
+    "subtext": "Staffing Solution",
+    "mark": "/images/branding/logo-mark.png",
+    "full": "/images/branding/logo-full.png"
   },
   "contact": {
     "email": "hello@example.com",

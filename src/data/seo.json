@@ -1,10 +1,10 @@
 {
   "default": {
-    "titleTemplate": "%s | StaffHiring",
-    "title": "StaffHiring — Permanent Staff Hiring & Recruitment for Businesses",
+    "titleTemplate": "%s | Aurevia Staffing Solution",
+    "title": "Aurevia Staffing Solution — Permanent Staff Hiring & Recruitment for Businesses",
     "description": "Hire permanent chefs, waiters, housekeeping, security, office and skilled trade staff for your business. Structured requirements, indicative budgets and a clear hiring process.",
     "keywords": ["permanent staffing", "staff hiring", "recruitment services", "restaurant staff hiring", "hotel staff", "office staff", "skilled workforce"],
-    "ogImage": null,
+    "ogImage": "/images/branding/og-image.png",
     "twitterHandle": null
   },
   "pages": {
@@ -14,7 +14,7 @@
     },
     "about": {
       "title": "About",
-      "description": "Learn how StaffHiring approaches permanent staffing for restaurants, hotels, offices, retail stores and commercial businesses."
+      "description": "Learn how Aurevia Staffing Solution approaches permanent staffing for restaurants, hotels, offices, retail stores and commercial businesses."
     },
     "services": {
       "title": "Staffing Services",
@@ -26,15 +26,15 @@
     },
     "contact": {
       "title": "Request Staff",
-      "description": "Share your staffing requirement — role, headcount, budget and timeline — and get in touch with StaffHiring."
+      "description": "Share your staffing requirement — role, headcount, budget and timeline — and get in touch with Aurevia Staffing Solution."
     },
     "privacy": {
       "title": "Privacy Policy",
-      "description": "How StaffHiring handles the information you share through this website."
+      "description": "How Aurevia Staffing Solution handles the information you share through this website."
     },
     "terms": {
       "title": "Terms of Service",
-      "description": "Terms governing the use of the StaffHiring website and services."
+      "description": "Terms governing the use of the Aurevia Staffing Solution website and services."
     },
     "notFound": {
       "title": "Page not found",

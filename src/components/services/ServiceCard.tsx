@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 import { Badge } from "@/components/ui/Badge";
@@ -37,6 +38,11 @@ export function ServiceCard({ service, variant = "compact" }: ServiceCardProps) 
 
   return (
     <GlassCard as="article" id={service.slug} padding="lg" className="scroll-mt-28">
+      {service.image ? (
+        <div className="relative -mx-7 -mt-7 mb-8 aspect-21/9 overflow-hidden rounded-t-card border-b border-border sm:-mx-9 sm:-mt-9">
+          <Image src={service.image} alt={`${service.name} — staff placed by the company`} fill sizes="(min-width: 1280px) 1200px, 100vw" className="object-cover" />
+        </div>
+      ) : null}
       <div className="grid gap-8 lg:grid-cols-[1.2fr_1fr] lg:gap-12">
         <div>
           <div className="flex items-center gap-4">

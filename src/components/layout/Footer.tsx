@@ -24,9 +24,18 @@ export function Footer() {
       <PageContainer className="py-14 sm:py-16">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1.2fr] lg:gap-8">
           <div className="max-w-sm">
-            <Link href="/" className="inline-flex items-center gap-2.5 rounded-control" aria-label={`${site.logo.text} — home`}>
-              {site.logo.mark ? <Image src={site.logo.mark} alt="" width={32} height={32} className="size-8" /> : null}
-              <span className="font-display text-lg font-semibold tracking-tight">{site.logo.text}</span>
+            <Link href="/" className="inline-flex items-center gap-2.5 rounded-control" aria-label={`${site.name} — home`}>
+              {site.logo.full ? (
+                // Full logo on a light card so the multicolour wordmark reads in both themes.
+                <span className="inline-flex rounded-card bg-white p-3">
+                  <Image src={site.logo.full} alt={site.name} width={180} height={116} className="h-auto w-44" />
+                </span>
+              ) : (
+                <>
+                  {site.logo.mark ? <Image src={site.logo.mark} alt="" width={32} height={32} className="size-8" /> : null}
+                  <span className="font-display text-lg font-semibold tracking-tight">{site.logo.text}</span>
+                </>
+              )}
             </Link>
             <p className="mt-4 text-[0.95rem] text-muted">{footer.description}</p>
             {social.length > 0 ? (

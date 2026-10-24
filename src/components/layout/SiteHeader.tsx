@@ -5,5 +5,5 @@ import { getNavigation, getSite } from "@/lib/data";
 export function SiteHeader() {
   const site = getSite();
   const nav = getNavigation();
-  return <Header brand={{ text: site.logo.text, mark: site.logo.mark }} links={nav.main} cta={nav.cta} />;
+  return <Header brand={{ text: site.logo.text, subtext: site.logo.subtext, mark: site.logo.mark }} links={nav.main} cta={nav.cta} />;
 }

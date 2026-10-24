@@ -59,6 +59,10 @@ export function buildPageMetadata({ page, path, title, description }: PageMetada
   const titleMeta: Metadata["title"] =
     path === "/" ? { absolute: seo.default.titleTemplate.replace("%s", resolvedTitle) } : resolvedTitle;
 
+  // Next merges metadata per top-level key, so a page-level `openGraph` object
+  // replaces the root one entirely — the shared image must be repeated here.
+  const ogImages = seo.default.ogImage ? [{ url: absoluteUrl(seo.default.ogImage), width: 1200, height: 630, alt: getSite().name }] : undefined;
+
   return {
     title: titleMeta,
     description: resolvedDescription,
@@ -68,10 +72,13 @@ export function buildPageMetadata({ page, path, title, description }: PageMetada
       title: resolvedTitle,
       description: resolvedDescription,
       url,
+      images: ogImages,
     },
     twitter: {
+      card: ogImages ? "summary_large_image" : "summary",
       title: resolvedTitle,
       description: resolvedDescription,
+      images: ogImages,
     },
   };
 }

@@ -32,8 +32,14 @@ export interface SiteData {
   url: string;
   locale: string;
   logo: {
+    /** Wordmark text shown next to the mark. */
     text: string;
+    /** Small descriptor under/next to the wordmark (e.g. "Staffing Solution"). */
+    subtext?: string;
+    /** Transparent mark image path; null renders a gradient placeholder. */
     mark: string | null;
+    /** Full logo (mark + wordmark) for the footer; null falls back to mark + text. */
+    full?: string | null;
   };
   contact: ContactInfo;
   social: SocialLink[];

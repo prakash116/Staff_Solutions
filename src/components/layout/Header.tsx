@@ -14,7 +14,7 @@ import { cn } from "@/lib/cn";
 import type { NavLink } from "@/types";
 
 export interface HeaderProps {
-  brand: { text: string; mark: string | null };
+  brand: { text: string; subtext?: string; mark: string | null };
   links: NavLink[];
   cta: NavLink;
 }
@@ -51,13 +51,16 @@ export function Header({ brand, links, cta }: HeaderProps) {
         )}
       >
         <PageContainer className="flex h-16 items-center justify-between gap-4 sm:h-18">
-          <Link href="/" className="flex items-center gap-2.5 rounded-control" aria-label={`${brand.text} — home`}>
+          <Link href="/" className="flex items-center gap-2.5 rounded-control" aria-label={`${brand.text}${brand.subtext ? ` ${brand.subtext}` : ""} — home`}>
             {brand.mark ? (
-              <Image src={brand.mark} alt="" width={32} height={32} priority className="size-8" />
+              <Image src={brand.mark} alt="" width={40} height={40} priority className="size-10" />
             ) : (
               <span aria-hidden="true" className="size-8 rounded-[0.6rem] bg-linear-to-br from-primary to-accent" />
             )}
-            <span className="font-display text-lg font-semibold tracking-tight text-foreground">{brand.text}</span>
+            <span className="flex flex-col leading-none">
+              <span className="font-display text-lg font-semibold tracking-tight text-foreground">{brand.text}</span>
+              {brand.subtext ? <span className="mt-0.5 text-[0.65rem] font-medium tracking-[0.12em] whitespace-nowrap text-muted uppercase">{brand.subtext}</span> : null}
+            </span>
           </Link>
 
           <nav aria-label="Main" className="hidden lg:block">

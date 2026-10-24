@@ -1,4 +1,4 @@
-# StaffHiring — Permanent Staff Hiring & Recruitment Website
+# Aurevia Staffing Solution — Permanent Staff Hiring & Recruitment Website
 
 A premium, responsive marketing website for a business that places **permanent employees** with restaurants, hotels, cafes, offices, retail stores and other commercial establishments.
 
@@ -73,7 +73,8 @@ src/
     contact-submission.ts   Single integration point for a future API
     seo.ts site-url.ts icons.ts cn.ts theme-constants.ts
   types/                    TypeScript interfaces for every data file
-public/images/branding/     Logo mark (replace with the real logo)
+public/images/{branding,staff,services}/   Logo assets, staff and service photos (WebP)
+assets-source/              Original logo and photo uploads (not served)
 ```
 
 ## Editing content (JSON)
@@ -121,7 +122,16 @@ Currency formatting uses `Intl.NumberFormat("en-IN")`, so INR values use the Ind
 
 ### Replace images
 
-Put files under `public/images/staff/`, `public/images/services/` or `public/images/branding/` and reference them from JSON, e.g. `"image": "/images/staff/chef.webp"`. Cards render the image via `next/image` when present and fall back to the icon when `null`. Replace `public/images/branding/logo-mark.svg` with the real logo mark (or set `logo.mark` to `null` for a gradient placeholder). To add an Open Graph image, place it in `public/images/branding/` and set `seo.json → default.ogImage`.
+Put files under `public/images/staff/`, `public/images/services/` or `public/images/branding/` and reference them from JSON, e.g. `"image": "/images/staff/chef.webp"`. Cards render the image via `next/image` when present and fall back to the icon when `null`. Staff and service photos are 1280px-wide WebP exports; the original uploads live in `assets-source/` (not served).
+
+Branding assets (all generated from `assets-source/logo-original.jpeg`):
+
+- `public/images/branding/logo-mark.png` — transparent "A" mark used in the header (`site.json → logo.mark`)
+- `public/images/branding/logo-full.png` — mark + wordmark used in the footer (`site.json → logo.full`)
+- `public/images/branding/og-image.png` — 1200×630 social preview (`seo.json → default.ogImage`)
+- `src/app/icon.png` (favicon) and `src/app/apple-icon.png` — picked up automatically by Next.js
+
+To change the logo, replace those files (keep the mark transparent so it works on the dark theme) and update `logo.text` / `logo.subtext` in `site.json`.
 
 ### Update contact information
 
