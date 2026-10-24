@@ -2,11 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  experimental: {
-    // Inline the (small) Tailwind stylesheet into the HTML so first paint does
-    // not wait on a separate render-blocking CSS request.
-    inlineCss: true,
-  },
+  // Note: experimental.inlineCss was evaluated and rejected — Next duplicates the
+  // inlined stylesheet inside the RSC flight payload, tripling the HTML size.
   images: {
     formats: ["image/avif", "image/webp"],
     // Add remote hosts here only when real remote images are configured.

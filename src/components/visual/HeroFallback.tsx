@@ -27,8 +27,10 @@ export function HeroFallback({ cards, still = false }: HeroFallbackProps) {
       {visible.map((card, i) => (
         <div
           key={card.label}
+          // Solid translucent surface (no backdrop blur): these cards animate transform
+          // continuously, and blur under a moving element re-rasterises every frame on phones.
           className={cn(
-            "glass absolute w-[42%] rounded-card p-4 will-change-transform",
+            "absolute w-[42%] rounded-card border border-border bg-surface-strong/90 p-4 shadow-glass will-change-transform",
             placements[i],
             !still && "animate-float",
           )}

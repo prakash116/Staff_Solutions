@@ -153,5 +153,20 @@ The JSON files are **static frontend data** compiled into the build — they are
 - **3D hero** renders only on screens ≥ 768px with WebGL available and no reduced-motion preference; otherwise the CSS card composition is shown. Two-finger/touch parallax is intentionally disabled.
 - **Placement fees** are not configured (`null`) and display as "On request" until real figures are entered.
 - No analytics, cookie consent, i18n or CMS integration.
+
+## Performance notes
+
+Lighthouse 13 against `next build && next start` (Oct 2026):
+
+- **Desktop:** 100 / 100 / 100 / 100 (Performance, Accessibility, Best Practices, SEO) on every audited page.
+- **Mobile:** Accessibility, Best Practices and SEO 100; Performance 82–95 depending on page and throttling mode, with CLS 0 and LCP equal to FCP (the limiting factor is first paint over simulated slow 4G, not a late-rendering element).
+
+Decisions that keep it there — worth knowing before changing them:
+
+- The hero entrance is CSS keyframes (`hero-rise` / `hero-enter`), not Framer Motion, and the headline/lead paragraph only translate (no opacity fade). Chrome delays the LCP timestamp of text that fades in from `opacity: 0`, and a JS-driven entrance cannot start until hydration finishes.
+- Scroll reveals (`AnimatedSection`, `StaggerGroup`) are CSS transitions driven by `useReveal`: content is visible in the server HTML and only elements below the first viewport are hidden, in one batched layout read before any DOM write. Framer Motion is used only for exit animations (mobile menu, FAQ, form alert) via `LazyMotion` + `m`.
+- The Three.js hero loads after `requestIdleCallback`, only on screens ≥ 768px, and uses `MeshStandardMaterial` (cheaper shader than Physical).
+- `Bricolage Grotesque` is loaded with the weight axis only; adding `opsz`/`wdth` axes triples the preloaded font file.
+- `experimental.inlineCss` was tested and rejected: Next duplicates the inlined stylesheet inside the RSC payload, growing the HTML ~2.5×.
 #   S t a f f _ S o l u t i o n s  
  
