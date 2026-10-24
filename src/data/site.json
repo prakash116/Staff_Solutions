@@ -12,23 +12,23 @@
     "full": "/images/branding/logo-full.png"
   },
   "contact": {
-    "email": "hello@example.com",
-    "phone": "+91 00000 00000",
-    "whatsapp": "+91 00000 00000",
+    "email": "aureviatechteam@gmail.com",
+    "phone": "+91 83687 08750",
+    "whatsapp": "+91 83687 08750",
     "address": {
-      "line1": "Sample Address Line 1",
-      "line2": "Sample Business Park",
-      "city": "Sample City",
-      "state": "Sample State",
-      "postalCode": "000000",
+      "line1": "Sector 6 Rd, Pocket 1",
+      "line2": "Sector 6A, Rohini",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "postalCode": "110085",
       "country": "India"
     },
     "businessHours": "Monday to Saturday, 10:00 AM – 7:00 PM IST"
   },
   "social": [
-    { "id": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/", "icon": "linkedin", "active": true },
-    { "id": "instagram", "label": "Instagram", "url": "https://www.instagram.com/", "icon": "instagram", "active": true },
-    { "id": "facebook", "label": "Facebook", "url": "https://www.facebook.com/", "icon": "facebook", "active": false }
+    { "id": "linkedin", "label": "LinkedIn", "url": "", "icon": "linkedin", "active": false },
+    { "id": "instagram", "label": "Instagram", "url": "", "icon": "instagram", "active": false },
+    { "id": "facebook", "label": "Facebook", "url": "", "icon": "facebook", "active": false }
   ],
   "demoMode": true,
   "placeholderNotice": "Sample content — replace with actual business information before launch."

@@ -9,7 +9,6 @@ import { SocialIcon } from "@/components/layout/SocialIcon";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { PageHero } from "@/components/ui/PageHero";
-import { SampleNotice } from "@/components/ui/SampleNotice";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { getActiveSocialLinks, getContact, getSite, getStaffCategories } from "@/lib/data";
 import { buildPageMetadata } from "@/lib/seo";
@@ -47,7 +46,6 @@ export default function ContactPage() {
               <div className="p-6 sm:p-7">
               <h2 className="text-xl font-semibold">{contact.info.title}</h2>
               <p className="mt-1 text-sm text-muted">{contact.info.intro}</p>
-              {site.demoMode ? <SampleNotice className="mt-4">{site.placeholderNotice}</SampleNotice> : null}
 
               <dl className="mt-6 space-y-5">
                 <InfoRow icon={<Mail aria-hidden="true" size={18} />} label={contact.info.emailLabel}>
